@@ -19,10 +19,11 @@ class HomepageSmallBallView: UIView{
         surround?.backgroundColor = UIColor.DarkSlateGrayDeep()
         surround?.layer.cornerRadius = self.frame.size.width / 2
         self.addSubview(surround!)
-        category = UIImageView(frame: CGRectMake(0, 0, self.frame.size.width - 20, self.frame.size.width - 20))
+        category = UIImageView(frame: CGRectMake(0, 0, self.frame.size.width - HomepageConstant.HeadBallCenterMargin, self.frame.size.width - HomepageConstant.HeadBallCenterMargin))
         //TODO
         category?.backgroundColor = UIColor.blackColor()
-        category?.layer.cornerRadius = (self.frame.size.width - 20) / 2
+        category?.center = CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2)
+        category?.layer.cornerRadius = (self.frame.size.width - HomepageConstant.HeadBallCenterMargin) / 2
         self.addSubview(category!)
     }
 
