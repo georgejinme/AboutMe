@@ -21,6 +21,10 @@ class HomepageController: UIViewController {
         self.view.addSubview(head!)
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        head?.smallBallAnimate()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
